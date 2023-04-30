@@ -2,7 +2,46 @@ body {
   background: blanchedalmond;
 }
 
+* { 
+border: 1px solid red;
+}
+
 .container{
 display: flex;
+min-height: 100vh;
+flex-direction: column;
+justify-content: space-between;
 }
+
+.a, .c { 
+flex-grow: 1;
+}
+
+.b{
+flex-grow: 1;
+}
+
+@media (min-width: 600px){
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+  .a {
+    width: 100%;
+    min-height: 5em;
+  }
+  .b {
+    min-height: 20em;
+    width: 65%;
+  }
+  .c{
+    min-height: 5em;
+    width: fit-content;
+  }
+  .a, .b, .c {
+    margin: 1em;
+  }
+}
+
 

@@ -2,6 +2,17 @@ body {
   background: papayawhip;
 }
 
-.container{
-  
+* {
+  border: 1px solid red;
+  box-sizing: border-box;
 }
+
+.container{
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+justify-content: space-between;
+row-gap: 10px;
+column-gap: 10px;
+}
+
